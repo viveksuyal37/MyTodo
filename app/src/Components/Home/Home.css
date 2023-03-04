@@ -1,0 +1,244 @@
+.welcome-title{
+  color: var(--white-col);
+  font-size: 40px;
+  margin-top: 90px;
+  margin-left: 40px;
+}
+
+.welcome-title span{
+  color: rgb(106, 106, 253);
+}
+
+.chart-container {
+  margin: 150px auto 70px auto;
+  height: 400px;
+  width: 800px;
+}
+
+.chart-title {
+  margin-bottom: 15px;
+}
+
+.add-todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 500px;
+  height: 380px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-todo-icon {
+  font-size: 60px;
+  cursor: pointer;
+  color: var(--secondary-col);
+}
+
+.add-todo-menu {
+  position: relative;
+  align-items: flex-start;
+  width: 500px;
+  height: 380px;
+  margin: 0 auto;
+  background-color: var(--primary-col);
+  padding: 25px 0 20px 20px;
+}
+
+.add-todo-form input {
+  outline: none;
+  font-size: 16px;
+  display: block;
+  padding: 4px 10px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+}
+
+.add-todo-form label {
+  margin-bottom: 4px;
+}
+
+.add-todo-form label span {
+  color: var(--secondary-col);
+}
+
+.add-todo-close {
+  position: absolute;
+  font-size: 22px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.addTodo-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-color: var(--secondary-col);
+  color: var(--white-col);
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.add-todo-image {
+  position: absolute;
+  top: 35%;
+  right: 70px;
+  color: white;
+  font-size: 80px;
+}
+
+.edit-todo-png {
+  width: 80px;
+}
+
+.my-todos-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-size: 34px;
+}
+
+.my-todos-menu {
+  justify-content: center;
+  display: flex;
+  column-gap: 1rem;
+}
+
+.my-todos-menu button {
+  cursor: pointer;
+  background-color: var(--secondary-col);
+  color: var(--white-col);
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.3s ease-out;
+  margin-bottom: 40px;
+}
+
+/* for active button */
+.active-btn {
+  background-color: var(--white-col) !important;
+  color: var(--primary-col) !important;
+}
+
+.todo-list-container {
+  min-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 50px;
+}
+
+.todo-card {
+  position: relative;
+  background-color: var(--primary-col);
+  width: 70%;
+  margin: 20px auto;
+  border-radius: 22px;
+  text-align: left;
+  padding: 20px 40px;
+}
+
+.card-title {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.hrefed-title {
+  color: var(--secondary-col-light);
+}
+
+.card-img-url img {
+  position: absolute;
+  left: 10px;
+  top: 25px;
+  width: 20px;
+  height: 20px;
+}
+
+.card-note {
+  font-size: 15px;
+}
+
+.card-date {
+  position: absolute;
+  right: 15px;
+  bottom: 7px;
+  font-size: 15px;
+}
+
+.pending-box {
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 18px;
+  right: 100px;
+}
+
+.card-icons {
+  display: flex;
+  gap: 0.6rem;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.edit-icon {
+  color: var(--secondary-col);
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: rgb(197, 8, 8);
+  cursor: pointer;
+}
+
+.edit-todo-section {
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: var(--primary-col-light);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+@media screen and (max-width: 500px) {
+
+  .welcome-title{
+    font-size: 28px;
+    margin-top: 80px;
+    margin-left: 20px;
+  }
+  .chart-container {
+    margin: 40px auto 30px auto;
+    height: 300px;
+    width: 90vw;
+  }
+
+  .add-todo-container {
+    width: 90vw;
+    height: 300px;
+  }
+
+  .todo-list-container {
+    margin: 0;
+  }
+
+  .todo-card {
+    width: 91%;
+  }
+  .add-todo-image {
+    top: 29%;
+    right: 16px;
+  }
+}

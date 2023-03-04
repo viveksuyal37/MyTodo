@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* colors */
+
+:root{
+--primary-col:black;
+--primary-col-light:rgba(0,0,0,0.9);
+--primary-col-ex-light:rgba(0,0,0,0.4);
+--secondary-col:rgb(34, 96, 211);
+--secondary-col-light:rgb(73, 107, 170);
+--white-col:white;
+
+}
+
+body{
+    background-color: var(--primary-col-light);
+    color: var(--white-col);
+}
